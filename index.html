@@ -2,12 +2,49 @@
 
 <html>
     <head>
-        <title>ReadIt</title>
+        <title>Read-It: A Library App</title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Readit</h1>
+        <h1>Read-It</h1>
+        <!-- Add New Book button -->
+        <div id="add-container">
+            <button id="add">+ Add New Book</button>    
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="form-container">
+                    <form>
+                        <label for="title">Title</label><br>
+                        <input type="text" id="title" name="title" required><br>
+            
+                        <label for="author">Author</label><br>
+                        <input type="text" id="author" name="author" required><br>
+                        
+                        <label for="pages"># of pages</label><br>
+                        <input type="number" id="pages" name="pages" required><br>
+                        <!-- Unread/Read buttons -->
+                        <div class="radio">
+                            <label for="unread"><input type="radio" id="unread" name="status" value="unread" required>Unread</label><br>
+                            <label for="read"><input type="radio" id="read" name="status" value="read" required>Read</label><br>        
+                        </div>
+                        <!-- Confirm/Cancel buttons -->
+                        <div class="submit">
+                            <button type="submit" id="confirm">Confirm</button>
+                            <button id="cancel">Cancel</button>                          
+                        </div>
+                    </form>
+                </div>
+            </div>     
+        </div>
+
+        <!-- Library display -->
+        <div id="library"></div>
     </body>
 
     <script src="script.js"></script>

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Exo+2&family=Mate+SC&family=Roboto&display=swap');
+html {
+  background: rgb(235, 235, 235);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 90px;   
+  margin-bottom: 25px;
+}
+
+/* Book titles */
+h2 {
+  font-family: 'Mate SC', serif;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+/* Authors */
+h3 {
+  font-size: 20px;
+}
+
+#add-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#add{
+  background-color: rgb(108, 45, 255);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 25px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+#add:hover {
+  opacity: 0.7;
+}
+
+#add:active {
+  opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.form-container{
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#cancel{
+  background: white;
+  padding: 15px 32px;
+  text-align: center; 
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 200px;
+  transition: 0.3s;
+  border: 2px solid red;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#cancel:hover {
+  background: red;
+  color: white;
+}
+
+#confirm{
+  background: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 200px;
+  transition: 0.3s;
+  border: 2px solid green;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#confirm:hover{
+  background: green;
+  color: white;
+}
+
+#library {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.book {
+  height: 350px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.book:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.status-unread{
+  border: solid 3px rgb(108, 45, 255);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 75px;
+  transition: 0.3s;
+}
+
+.status-unread:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.status-read{
+  background: rgb(108, 45, 255);
+  color: white;
+  border: solid 3px rgb(108, 45, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 75px;
+  transition: 0.3s;
+}
+
+.status-read:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background: rgb(108, 45, 255);
+  opacity: 0.7;
+}

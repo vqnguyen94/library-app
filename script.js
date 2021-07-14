@@ -4,14 +4,6 @@
 // Error checking for form inputs, limit long titles, authors, etc 
 // Multiple "pages" so that no scroll is needed to display a larger amount of books
 
-
-// function Book(title, author, pages, read){
-//     this.title = title;
-//     this.author = author;
-//     this.pages = pages;
-//     this.read = read;
-// }
-
 class Book {
   constructor(title, author, pages, read) {
     this.title = title;
